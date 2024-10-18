@@ -1,0 +1,14 @@
+{
+    "Header Guard": {
+        "prefix": "pragmaonce",
+        "body": [
+            "#ifndef ${1:<PROJECT>_<PATH>_<FILE>_H_}",
+            "#define $1",
+            "",
+            "$0",
+            "",
+            "#endif // $1"
+        ],
+        "description": "Insert a header guard"
+    }
+}

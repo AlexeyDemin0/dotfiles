@@ -1,0 +1,5 @@
+code,code
+[ssh] qbot,kitty ssh qbot
+chromium home proxy,chromium --proxy-server=192.168.68.100:8080
+reboot,reboot
+shutdown,shutdown +0
