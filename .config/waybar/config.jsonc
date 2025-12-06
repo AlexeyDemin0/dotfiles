@@ -1,0 +1,92 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 34,
+  "exclusive": true,
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window",
+  ],
+  "modules-center": [
+    "tray",
+    "mpris",
+  ],
+  "modules-right": [
+    "network",
+    "cpu",
+    "memory",
+    "pulseaudio",
+    "hyprland/language",
+    "clock",
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "active": ""
+    },
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "all-outputs": true,
+  },
+
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 50
+  },
+
+  "tray": {
+    "spacing": 8
+  },
+
+  "mpris": {
+    "format": " {artist} - {title}",
+    "format-paused": " {artist} - {title}",
+    "max-length": 45,
+    "on-click": "playerctl play-pause",
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": true,
+    "interval": 5
+  },
+
+  "memory": {
+    "format": " {}%",
+    "tooltip": true,
+    "interval": 5
+  },
+
+  "network": {
+    "format-wifi": " {bandwidthDownBits} | {bandwidthUpBits}",
+    "format-ethernet": "󰌗 {bandwidthDownBits} | {bandwidthUpBits}",
+    "format-disconnected": " No Net",
+    "align": 0,
+    "tooltip": false,
+    "interval": 1
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " Muted",
+    "format-icons": {
+      "default": [" ", " "],
+      "muted": " "
+    },
+    "scroll-step": 5,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  },
+
+  "hyprland/language": {
+    "format": " {short}",
+  },
+
+  "clock": {
+    "format": " {:%H:%M}",
+    "format-alt": " {:%Y-%m-%d}",
+    "tooltip": false,
+    "interval": 1
+  },
+}

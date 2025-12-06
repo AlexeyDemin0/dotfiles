@@ -1,0 +1,37 @@
+
+[font]
+normal = { family = "CaskaydiaCove Nerd Font", style = "Regular" }
+bold = { family = "CaskaydiaCove Nerd Font", style = "Bold" }
+italic = { family = "CaskaydiaCove Nerd Font", style = "Italic" }
+bold_italic = { family = "CaskaydiaCove Nerd Font", style = "Bold Italic" }
+size = 11
+
+[colors]
+primary.background = "0x1f1f1f"
+primary.foreground = "0xdcdcdc"
+
+cursor.text = "0x1e1e1e"
+cursor.cursor = "0xadadad"
+
+selection.text = "0x000000"
+selection.background = "0xadd6ff" 
+
+[colors.normal]
+black = "0x1e1e1e"
+red = "0xf44747"
+green = "0x608b4e"
+yellow = "0xdcdcaa"
+blue = "0x569cd6"
+magenta = "0xc586c0"
+cyan = "0x4ec9b0"
+white = "0xdcdcdc"
+
+[colors.bright]
+black = "0x4e4e4e"
+red = "0xff5050"
+green = "0x789c68"
+yellow = "0xeeeecb"
+blue = "0x60a9f1"
+magenta = "0xe597e0"
+cyan = "0x68e4c7"
+white = "0xffffff"

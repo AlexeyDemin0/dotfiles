@@ -1,0 +1,77 @@
+#waybar {
+  background-color: #1e1e1e;
+  color: #cccccc;
+  font-family: FiraCode Nerd Font Propo, monospace;
+  font-size: 13px;
+  border-bottom: 2px solid #5b9cd6;
+  padding: 10px;
+}
+
+.module {
+  padding: 0 10px;
+  background-color: #2d2d30;
+  border-radius: 15px;
+  margin: 5px 1px;
+  min-width: 0;
+}
+
+#workspaces {
+  background-color: transparent;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+#workspaces button {
+  color: #808080;
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+#workspaces button.active {
+  background-color: #5b9cd6;
+  color: #1e1e1e;
+}
+
+#workspaces button:hover {
+  background-color: #2f2f2f;
+  color: white;
+}
+
+#window {
+  background-color: transparent;
+  font-style: italic;
+  color: #c586c0;
+}
+
+#mpris {
+  color: #6a9955;
+  font-weight: bold;
+  padding: 0 15px;
+}
+
+#mpris.paused {
+  color: #808080;
+}
+
+#network {
+  background-color: #2d2d30;
+  color: #5b9cd6;
+  padding: 0 10px;
+  min-width: 160px;
+}
+
+#network.disconnected {
+  color: #cc6666;
+}
+
+#pulseaudio.muted {
+  color: #808080;
+}
+
+#clock {
+  font-weight: bold;
+}
+
