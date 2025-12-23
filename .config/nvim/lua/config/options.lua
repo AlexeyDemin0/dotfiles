@@ -28,7 +28,7 @@ vim.opt.incsearch = true
 
 vim.opt.cursorline = true
 vim.opt.cursorcolumn = false
-vim.opt.colorcolumn = { 99 }
+vim.opt.colorcolumn = { 80, 100, 120 }
 vim.opt.signcolumn = 'yes'
 vim.opt.showmode = false
 vim.opt.ruler = true
