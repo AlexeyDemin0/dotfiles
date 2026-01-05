@@ -1,8 +1,19 @@
 local builtin = require('telescope.builtin')
+
+require 'telescope'.setup {
+  extensions = {
+    media_files = {
+      filetypes = {"png", "webp", "jpg", "jpeg", "svg", "mp4"},
+      find_cmd = "rg"
+    }
+  },
+}
+
+require('telescope').load_extension('media_files')
+
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fw', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
--- vim.keymap.set('n', '<Tab>', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '*', builtin.grep_string, {})
 vim.keymap.set('n', '<leader>gb', builtin.git_branches, {})
