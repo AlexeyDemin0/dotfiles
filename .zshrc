@@ -1,4 +1,3 @@
-
 if [[ -o interactive ]]; then
   fastfetch --logo Arch2
 fi
@@ -30,3 +29,6 @@ fi
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+zstyle ':completion:*' menu select
