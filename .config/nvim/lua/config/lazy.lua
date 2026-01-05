@@ -86,4 +86,5 @@ require("lazy").setup({
     end,
   },
   { "mason-org/mason.nvim" },
+  { 'RaafatTurki/hex.nvim' },
 })
