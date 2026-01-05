@@ -3,6 +3,12 @@ require("conform").setup({
     cpp = { "clang-format" },
     h = { "clang-format" },
     cppm = { "clang-format" },
+    python = {
+       "ruff_fix",
+       "ruff_format",
+       "ruff_organize_imports",
+    },
+    dart = { "dart_format" },
   }
 })
 
