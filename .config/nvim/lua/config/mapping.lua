@@ -29,6 +29,16 @@ vim.keymap.set('n', '<A-l>', '<C-w>>')
 vim.keymap.set('n', '<Space>', '<Nop>')
 vim.keymap.set('n', '<F2>', vim.lsp.buf.rename)
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action)
+vim.keymap.set('n', 'K', function() vim.lsp.buf.hover({ border = 'rounded' }) end)
+vim.keymap.set('n', '<leader>gl', function()
+  vim.diagnostic.open_float({
+    border = 'rounded',
+    prefix = ' ',
+    format = function(diag)
+      return string.format('%s [%s]', diag.message, diag.source or 'unknown') end
+    })
+  end)
+vim.keymap.set({'i', 'n'}, '<C-k>', function() vim.lsp.buf.signature_help({ border='rounded' }) end)
 
 vim.keymap.set('n', '<BS>', ':noh<CR>')
 
