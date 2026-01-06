@@ -1,0 +1,8 @@
+amneziavpn-bin
+docker-desktop
+facad
+google-chrome
+timeshift-autosnap
+wlogout
+yay
+yay-debug
