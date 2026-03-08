@@ -13,6 +13,7 @@
   ],
   "modules-right": [
     "network",
+    "custom/updates",
     "cpu",
     "memory",
     "pulseaudio",
@@ -45,6 +46,13 @@
     "format-paused": " {artist} - {title}",
     "max-length": 45,
     "on-click": "playerctl play-pause",
+  },
+
+  "custom/updates": {
+    "exec": "~/.config/waybar/update-count.sh",
+    "return-type": "json",
+    "interval": 3600,
+    "tooltip": true,
   },
 
   "cpu": {

@@ -75,3 +75,15 @@
   font-weight: bold;
 }
 
+#custom-updates {
+  color: #608b4e;
+}
+
+#custom-updates.pending {
+  color: #dcdcaa;
+  font-weight: bold;
+}
+
+#custom-updates.updated {
+  color: #608b4e;
+}
