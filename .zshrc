@@ -32,3 +32,6 @@ fi
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 zstyle ':completion:*' menu select
+
+# Added by LM Studio CLI tool (lms)
+export PATH="$PATH:/home/alexey/.lmstudio/bin"
