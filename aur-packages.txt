@@ -1,7 +1,9 @@
 amneziavpn-bin
+claude-code
 docker-desktop
 facad
 google-chrome
+lmstudio-bin
 timeshift-autosnap
 wlogout
 yay
