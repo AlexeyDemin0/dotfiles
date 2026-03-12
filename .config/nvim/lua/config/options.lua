@@ -43,6 +43,6 @@ vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
 
 vim.opt.scrolloff = 8
-vim.opt.sidescrolloff = 36
+vim.opt.sidescrolloff = 8
 
 vim.opt.whichwrap:append('<,>,[,],h,l')
