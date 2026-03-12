@@ -11,6 +11,8 @@ cmake
 code
 compsize
 conky
+cuda
+cudnn
 docker
 dolphin
 dunst
@@ -58,8 +60,11 @@ noto-fonts-emoji
 npm
 nvidia-open-dkms
 nvidia-utils
+openblas
+openmp
 openssh
 openvpn
+pacman-contrib
 pavucontrol
 pipewire
 pipewire-alsa
@@ -78,6 +83,7 @@ strongswan
 sudo
 telegram-desktop
 timeshift
+tmux
 tokei
 ttf-cascadia-code-nerd
 unrar
