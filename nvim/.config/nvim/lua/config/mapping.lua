@@ -45,6 +45,9 @@ vim.keymap.set('n', '<BS>', ':noh<CR>')
 vim.keymap.set('n', '<leader>bd', ':bdelete<CR>')
 vim.keymap.set('n', '<leader>bD', ':bdelete!<CR>')
 
+vim.keymap.set('n', '<leader>lh', ':e %<.h<CR>')
+vim.keymap.set('n', '<leader>lc', ':e %<.cpp<CR>')
+
 -- NeoTree
 vim.keymap.set('n', '<leader>e', ':Neotree show left focus<CR>')
 vim.keymap.set('n', '<leader>E', ':Neotree close<CR>')
