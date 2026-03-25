@@ -74,4 +74,8 @@ require("lazy").setup({
     config = true,
   },
   { 'RaafatTurki/hex.nvim' },
+  {
+    "SmiteshP/nvim-navic",
+    dependencies = { "neovim/nvim-lspconfig" },
+  },
 })
