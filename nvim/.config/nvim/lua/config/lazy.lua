@@ -34,6 +34,10 @@ require("lazy").setup({
     lazy = false,
     build = ":TSUpdate",
   },
+  {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    branch = "main",
+  },
   { "neovim/nvim-lspconfig" },
   { "Mofiqul/vscode.nvim" },
   {
