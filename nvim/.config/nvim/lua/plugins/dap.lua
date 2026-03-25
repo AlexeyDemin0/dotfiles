@@ -12,7 +12,7 @@ dap.configurations.c = {
     type = "gdb",
     request = "launch",
     program = function()
-      return vim.fn.input('Path tp executable: ', vim.fn.getcwd() .. '/', 'file')
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
     end,
     args = {},
     cwd = "${workspaceFolder}",
