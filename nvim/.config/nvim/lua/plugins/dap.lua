@@ -16,14 +16,14 @@ dap.configurations.c = {
     end,
     args = {},
     cwd = "${workspaceFolder}",
-    stopAtBegginingOfMainSubprogram = false,
+    stopAtBeginingOfMainSubprogram = false,
   },
   {
     name = "Select and attach to process",
     type = "gdb",
     request = "attach",
     program = function()
-      return vim.fn.input('Path tp executable: ', vim.fn.getcwd() .. '/', 'file')
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
     end,
     pid = function()
       local name = vim.fn.input('Executable name (filter): ', vim.fn.getcwd() .. '/', 'file')
