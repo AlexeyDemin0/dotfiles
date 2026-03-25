@@ -51,7 +51,3 @@ vim.keymap.set('n', '<leader>lc', ':e %<.cpp<CR>')
 -- NeoTree
 vim.keymap.set('n', '<leader>e', ':Neotree show left focus<CR>')
 vim.keymap.set('n', '<leader>E', ':Neotree close<CR>')
-
--- Neominimap
-vim.keymap.set('n', '<leader>mm', ':Neominimap ToggleFocus<CR>')
-vim.keymap.set('n', '<leader>me', ':Neominimap Toggle<CR>')

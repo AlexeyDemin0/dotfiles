@@ -46,3 +46,5 @@ vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 
 vim.opt.whichwrap:append('<,>,[,],h,l')
+
+vim.opt.termguicolors = true
