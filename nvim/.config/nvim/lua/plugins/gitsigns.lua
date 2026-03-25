@@ -49,23 +49,12 @@ require('gitsigns').setup {
     local gs = package.loaded.gitsigns
 
     vim.keymap.set('n', ']h', function() gs.nav_hunk('next', { target = 'all' }) end)
-    vim.keymap.set('n', ']H', function() gs.nav_hunk('first', { target = 'all' }) end)
     vim.keymap.set('n', '[h', function() gs.nav_hunk('prev', { target = 'all' }) end)
-    vim.keymap.set('n', '[H', function() gs.nav_hunk('last', { target = 'all' }) end)
-
-    vim.keymap.set('n', '<leader>hh', function()
-      gs.nav_hunk('next', { target = 'all' })
-      gs.preview_hunk_inline()
-    end)
-    vim.keymap.set('n', '<leader>HH', function()
-      gs.nav_hunk('prev', { target = 'all' })
-      gs.preview_hunk_inline()
-    end)
 
     vim.keymap.set({'n', 'v'}, '<leader>hs', gs.stage_hunk)
     vim.keymap.set({'n', 'v'}, '<leader>hr', gs.reset_hunk)
     vim.keymap.set({'n', 'v'}, '<leader>hS', gs.stage_buffer)
-    vim.keymap.set({'n', 'v'}, '<leader>hR', gs.stage_buffer)
+    vim.keymap.set({'n', 'v'}, '<leader>hR', gs.reset_buffer)
 
     vim.keymap.set('n', '<leader>hp', gs.preview_hunk_inline)
     vim.keymap.set('n', '<leader>hd', gs.diffthis)
