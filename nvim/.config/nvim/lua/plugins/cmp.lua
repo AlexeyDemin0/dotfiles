@@ -1,6 +1,7 @@
 local cmp = require'cmp'
 
 cmp.setup({
+  completion = { autocomplete = false },
   window = {
     completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
