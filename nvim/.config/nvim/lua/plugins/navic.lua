@@ -2,7 +2,7 @@ local navic = require("nvim-navic")
 
 navic.setup {
   icons = {
-File = ' ',
+    File = ' ',
     Module = ' ',
     Namespace = ' ',
     Package = ' ',
