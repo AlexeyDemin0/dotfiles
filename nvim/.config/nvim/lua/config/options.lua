@@ -48,3 +48,5 @@ vim.opt.sidescrolloff = 1
 vim.opt.whichwrap:append('<,>,[,],h,l')
 
 vim.opt.termguicolors = true
+
+vim.opt.winbar = ' '
