@@ -9,6 +9,7 @@ require("conform").setup({
        "ruff_organize_imports",
     },
     dart = { "dart_format" },
+    rust = { "rustfmt" },
   }
 })
 
