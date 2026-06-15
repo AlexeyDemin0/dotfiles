@@ -1,11 +1,10 @@
 require("config.lazy")
-require("config.options") 
+require("config.options")
 require("config.mapping")
 require("config.color")
 
 -- Plugins
 require("plugins.mason")
-require("plugins.treesitter")
 require("plugins.neotree")
 require("plugins.lsp")
 require("plugins.cmp")

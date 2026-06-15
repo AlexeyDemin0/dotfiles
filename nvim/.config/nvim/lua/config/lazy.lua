@@ -43,18 +43,18 @@ require("lazy").setup({
   { "hrsh7th/nvim-cmp" },
   {
     "nvim-telescope/telescope.nvim",
-    tag = '0.1.8',
-    dependencies = { 'nvim-lua/plenary.nvim' }
+    tag = "0.1.8",
+    dependencies = { "nvim-lua/plenary.nvim" },
   },
   { "stevearc/conform.nvim" },
   { "lewis6991/gitsigns.nvim" },
   {
     "nvim-lualine/lualine.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" }
+    dependencies = { "nvim-tree/nvim-web-devicons" },
   },
   {
     "akinsho/toggleterm.nvim",
-    version = "*"
+    version = "*",
   },
   { "mfussenegger/nvim-dap" },
   { "mason-org/mason.nvim" },
@@ -62,12 +62,12 @@ require("lazy").setup({
     "nvim-flutter/flutter-tools.nvim",
     lazy = false,
     dependencies = {
-        "nvim-lua/plenary.nvim",
-        "stevearc/dressing.nvim", -- optional for vim.ui.select
+      "nvim-lua/plenary.nvim",
+      "stevearc/dressing.nvim", -- optional for vim.ui.select
     },
     config = true,
   },
-  { 'RaafatTurki/hex.nvim' },
+  { "RaafatTurki/hex.nvim" },
   {
     "SmiteshP/nvim-navic",
     dependencies = { "neovim/nvim-lspconfig" },

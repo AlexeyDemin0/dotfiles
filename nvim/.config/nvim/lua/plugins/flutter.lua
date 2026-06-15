@@ -1,10 +1,10 @@
-require("flutter-tools").setup {
+require("flutter-tools").setup({
   decorations = {
     statusline = {
       app_version = true,
       device = true,
       project_config = true,
-    }
+    },
   },
   root_patterns = { ".git", "pubspec.yaml" },
   widget_guides = {
@@ -13,7 +13,7 @@ require("flutter-tools").setup {
   closing_tags = {
     prefix = "-> ",
     priority = 10,
-    enabled = true
+    enabled = true,
   },
   lsp = {
     color = {
@@ -24,5 +24,5 @@ require("flutter-tools").setup {
       virtual_text = true,
       virtual_text_str = "■",
     },
-  }
-}
+  },
+})

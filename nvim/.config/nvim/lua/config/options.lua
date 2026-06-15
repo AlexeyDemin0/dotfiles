@@ -1,7 +1,6 @@
-
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
 
 -- Tabs
 vim.opt.tabstop = 2
@@ -29,7 +28,7 @@ vim.opt.incsearch = true
 vim.opt.cursorline = true
 vim.opt.cursorcolumn = false
 vim.opt.colorcolumn = { 80, 100, 120 }
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 vim.opt.showmode = false
 vim.opt.ruler = true
 vim.opt.laststatus = 3
@@ -37,16 +36,16 @@ vim.opt.laststatus = 3
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
-vim.opt.undodir = os.getenv('HOME') .. '/.vim/undodir'
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
-vim.opt.encoding = 'utf-8'
-vim.opt.fileencoding = 'utf-8'
+vim.opt.encoding = "utf-8"
+vim.opt.fileencoding = "utf-8"
 
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 1
 
-vim.opt.whichwrap:append('<,>,[,],h,l')
+vim.opt.whichwrap:append("<,>,[,],h,l")
 
 vim.opt.termguicolors = true
 
-vim.opt.winbar = ' '
+vim.opt.winbar = " "
