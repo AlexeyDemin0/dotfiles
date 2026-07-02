@@ -1,51 +1,63 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.clipboard = "unnamedplus"
+local opt = vim.opt
 
--- Tabs
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
-vim.opt.smarttab = true
-vim.opt.autoindent = true
-vim.opt.smartindent = true
+-- ui
+opt.number = true
+opt.relativenumber = true
+opt.signcolumn = "yes"
+opt.wrap = false
+opt.showmode = false
+opt.ruler = true
+opt.laststatus = 3
+opt.winbar = " "
 
-vim.opt.list = true
-vim.opt.listchars = {
+-- indent and tabs
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.autoindent = true
+opt.smartindent = true
+
+-- search
+opt.ignorecase = true
+opt.smartcase = true
+
+-- show hiddend symbols
+opt.list = true
+opt.listchars = {
   tab = "· ",
   trail = "·",
-  extends = "→",
-  precedes = "←",
 }
 
-vim.opt.wrap = false
+-- highlighting rows and columns
+opt.cursorline = true
+opt.cursorcolumn = false
+opt.colorcolumn = { 80, 100, 120 }
 
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.hlsearch = true
-vim.opt.incsearch = true
+-- work with files
+opt.swapfile = false
+opt.backup = false
+opt.undofile = true
+opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
-vim.opt.cursorline = true
-vim.opt.cursorcolumn = false
-vim.opt.colorcolumn = { 80, 100, 120 }
-vim.opt.signcolumn = "yes"
-vim.opt.showmode = false
-vim.opt.ruler = true
-vim.opt.laststatus = 3
+-- encoding
+opt.encoding = "utf-8"
+opt.fileencoding = "utf-8"
 
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undofile = true
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+-- scroll
+opt.scrolloff = 8
+opt.sidescrolloff = 1
 
-vim.opt.encoding = "utf-8"
-vim.opt.fileencoding = "utf-8"
+-- additional moves
+opt.whichwrap:append("<,>,[,],h,l")
 
-vim.opt.scrolloff = 8
-vim.opt.sidescrolloff = 1
+-- terminal colorscheme
+opt.termguicolors = true
 
-vim.opt.whichwrap:append("<,>,[,],h,l")
+-- clipboard
+opt.clipboard = "unnamedplus"
 
-vim.opt.termguicolors = true
-
-vim.opt.winbar = " "
+-- diagnostic options
+vim.diagnostic.config({
+  virtual_text = true,
+  update_in_insert = true,
+})
