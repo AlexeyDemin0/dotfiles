@@ -35,3 +35,5 @@ zstyle ':completion:*' menu select
 
 # Added by LM Studio CLI tool (lms)
 export PATH="$PATH:/home/alexey/.lmstudio/bin"
+
+export PATH="$PATH:/home/alexey/.cargo/bin"
