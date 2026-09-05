@@ -2,9 +2,11 @@ amneziavpn-bin
 claude-code
 docker-desktop
 facad
+foo2zjs-nightly
 google-chrome
 lmstudio-bin
+localsend-bin
+protonup-qt
 timeshift-autosnap
 wlogout
 yay
-yay-debug
