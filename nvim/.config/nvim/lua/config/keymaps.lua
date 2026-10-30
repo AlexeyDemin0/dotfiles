@@ -7,8 +7,11 @@ map("n", "<leader>q", ":quit<CR>", { desc = "Quit" })
 
 map("i", "jj", "<ESC>", { desc = "Exit insert mode" })
 
-map("n", "<Up>", "<Nop>", { desc = "Disable arrow keys" })
-map("n", "<Down>", "<Nop>", { desc = "Disable arrow keys" })
+map("n", "<Up>", ":move -2<CR>", { desc = "Move line up", silent = true })
+map("n", "<Down>", ":move +1<CR>", { desc = "Move line down", silent = true })
+map("v", "<Up>", ":move '<-2<CR>gv", { desc = "Move selection up", silent = true })
+map("v", "<Down>", ":move '>+1<CR>gv", { desc = "Move selection down", silent = true })
+
 map("n", "<Left>", "<Nop>", { desc = "Disable arrow keys" })
 map("n", "<Right>", "<Nop>", { desc = "Disable arrow keys" })
 
